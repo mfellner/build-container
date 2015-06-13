@@ -1,0 +1,14 @@
+---
+appbuild:
+  build: .
+  environment:
+    TARGET_USER: mfellner
+    TARGET_NAME: hello-clojure
+    TARGET_VERSION: latest
+  command: echo done
+app:
+  build: ./docker
+  ports:
+    - "8080:8080"
+  volumes_from:
+    - appbuild

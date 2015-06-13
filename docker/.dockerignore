@@ -1,0 +1,14 @@
+*.clj
+*.xml
+*.md
+*.sh
+*.class
+*.properties
+.DS_Store
+.dependencies
+.dockerignore
+.gitignore
+Dockerfile
+src/
+target/uberjar+uberjar/
+target/uberjar/stale/

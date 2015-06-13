@@ -1,4 +1,4 @@
-(defproject hellow "0.1.0-SNAPSHOT"
+(defproject hello "0.1.0-SNAPSHOT"
   :description "Clojure in a container."
   :url "https://github.com/mfellner/build-container"
   :dependencies [[org.clojure/clojure "1.7.0-RC1"]
@@ -9,4 +9,5 @@
   :main ^:skip-aot hello.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
+  :uberjar-name "app.uber.jar"
   :ring {:handler hello.core/handler})
